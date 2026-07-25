@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Download } from "lucide-react";
+
 import Container from "@/components/common/Container";
-import Button from "@/components/common/Button";
 import SocialLinks from "@/components/common/SocialLinks";
+
 import personal from "@/data/personal";
 
 const techStack = ["React", "Next.js", "TypeScript", "Node.js"];
@@ -14,12 +15,15 @@ export default function Hero() {
       id="home"
       className="relative overflow-hidden lg:min-h-[calc(100vh-80px)] lg:flex lg:items-center"
     >
-      <div className="absolute inset-1 z-1 overflow-hidden">
+      {/* Background */}
+      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute -left-32 top-10 h-72 w-72 rounded-full bg-primary/10 blur-3xl md:h-80 md:w-80" />
-        <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-primary/10 blur-3xl md:h-[28rem] md:w-[28rem]" />
+
+        <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-primary/10 blur-3xl md:h-[28rem] md:w-[28rem]" />
       </div>
 
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16 py-12 md:py-16 lg:py-20">
+      <Container>
+        <div className="relative z-10 grid items-center gap-12 py-12 md:py-16 lg:grid-cols-2 lg:gap-16 lg:py-20">
 
           {/* Left */}
           <div className="text-center lg:text-left">
@@ -40,7 +44,7 @@ export default function Hero() {
               {techStack.map((item) => (
                 <span
                   key={item}
-                  className="rounded-full border border-border bg-surface px-4 py-2 text-sm text-text transition-colors hover:border-primary hover:text-primary"
+                  className="rounded-full border border-border bg-surface px-4 py-2 text-sm text-text transition hover:border-primary hover:text-primary"
                 >
                   {item}
                 </span>
@@ -51,39 +55,46 @@ export default function Hero() {
               {personal.tagline}
             </p>
 
+            {/* Buttons */}
             <div className="mt-10 flex flex-wrap justify-center gap-4 lg:justify-start">
-              <Link
-                href="#projects"
-                className="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 font-medium text-white transition-all duration-300 hover:bg-primary-hover"
-              >
-                View Projects
-                <ArrowRight className="ml-2" size={18} />
-              </Link>
+              {personal.buttons.map((button) => (
+                <Link
+                  key={button.label}
+                  href={button.href}
+                  target={button.target}
+                  rel={
+                    button.target === "_blank"
+                      ? "noopener noreferrer"
+                      : undefined
+                  }
+                  className={
+                    button.variant === "primary"
+                      ? "inline-flex items-center rounded-xl bg-primary px-6 py-3 font-medium text-white transition hover:bg-primary-hover"
+                      : "inline-flex items-center rounded-xl border border-border bg-surface px-6 py-3 font-medium text-heading transition hover:border-primary hover:text-primary"
+                  }
+                >
+                  {button.label}
 
-              <Link
-                href={personal.resume}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-xl border border-border bg-transparent px-6 py-3 font-medium text-heading transition-all duration-300 hover:bg-surface"
-              >
-                Download Resume
-                <Download className="ml-2" size={18} />
-              </Link>
+                  {button.variant === "primary" ? (
+                    <ArrowRight className="ml-2" size={18} />
+                  ) : (
+                    <Download className="ml-2" size={18} />
+                  )}
+                </Link>
+              ))}
             </div>
 
             <div className="mt-10 flex justify-center lg:justify-start">
               <SocialLinks />
             </div>
-
           </div>
+
           {/* Right */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative flex h-[280px] w-[280px] items-center justify-center sm:h-[320px] sm:w-[320px] md:h-[360px] md:w-[360px] lg:h-[420px] lg:w-[420px]">
 
-              {/* Ambient Glow */}
               <div className="absolute inset-0 rounded-full bg-primary/20 blur-3xl" />
 
-              {/* Gradient Outer Ring */}
               <div
                 className="absolute inset-0 rounded-full"
                 style={{
@@ -95,10 +106,9 @@ export default function Hero() {
                     "radial-gradient(farthest-side, transparent calc(100% - 15px), #fff calc(100% - 8px))",
                 }}
               />
-              {/* White/Dark Ring */}
+
               <div className="absolute inset-[10px] rounded-full bg-bg" />
 
-              {/* Dotted Ring */}
               <svg
                 className="absolute inset-[24px] h-auto w-auto animate-spin-slow"
                 viewBox="0 0 400 400"
@@ -115,12 +125,9 @@ export default function Hero() {
                 />
               </svg>
 
-              {/* Larger Inner Circle */}
               <div className="absolute inset-[44px] rounded-full bg-[#0F2C2C] shadow-inner" />
 
-              {/* Profile Image */}
               <div className="relative z-10 h-[78%] w-[78%] overflow-hidden rounded-full">
-
                 <Image
                   src={personal.image}
                   alt={personal.name}
@@ -133,9 +140,12 @@ export default function Hero() {
                   className="object-cover object-top scale-105"
                 />
               </div>
+
             </div>
           </div>
+
         </div>
+      </Container>
     </section>
   );
 }

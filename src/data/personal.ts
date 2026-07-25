@@ -11,6 +11,19 @@ const personal = {
   education: "Undergraduate in B.Sc. Honours in Computer Science & Technology",
   resume: "/resume.pdf",
   image: "/images/profile.jpg",
+  buttons: [
+    {
+      label: "View Projects",
+      href: "/#projects",
+      variant: "primary",
+    },
+    {
+      label: "Download Resume",
+      href: "/resume.pdf",
+      variant: "secondary",
+      target: "_blank",
+    },
+  ],
 };
 
 export default personal;

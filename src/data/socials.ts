@@ -1,13 +1,26 @@
-const socials = {
-  github: "https://github.com/sanjana-moon",
+import {
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa6";
 
-  linkedin: "https://www.linkedin.com/in/sanjana-moon-6956863b4",
+import { Mail } from "lucide-react";
 
-  facebook: "https://facebook.com/yourusername",
-
-  twitter: "https://twitter.com/yourusername",
-
-  email: "mailto:sanjanamoonliya@gmail.com",
-};
+const socials = [
+  {
+    label: "GitHub",
+    href: "https://github.com/sanjana-moon",
+    icon: FaGithub,
+  },
+  {
+    label: "LinkedIn",
+    href: "https://linkedin.com/in/sanjana-moon",
+    icon: FaLinkedin,
+  },
+  {
+    label: "Email",
+    href: "mailto:sanjanamoonliya@gmail.com",
+    icon: Mail,
+  },
+];
 
 export default socials;
