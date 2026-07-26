@@ -61,7 +61,7 @@ export default function About() {
                 </h4>
 
                 <p className="mt-3 font-semibold text-heading">
-                  Open to Internship & Freelance
+                  Available for Internship, Freelance & Remote Work
                 </p>
               </div>
 
