@@ -20,7 +20,7 @@ export default function About() {
           {/* About Card */}
           <div className="rounded-3xl border border-border bg-surface p-8 shadow-sm transition-all duration-300 hover:border-primary/30 md:p-12">
 
-            <h3 className="font-heading text-3xl font-bold text-heading">
+            <h3 className="font-heading text-3xl font-bold text-heading ">
               Hi, I'm {personal.name}
             </h3>
 
@@ -28,7 +28,7 @@ export default function About() {
               {personal.designation}
             </p>
 
-            <p className="mt-8 leading-8 text-text">
+            <p className="mt-8 leading-8 text-text text-justify">
               {personal.about}
             </p>
 

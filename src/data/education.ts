@@ -55,7 +55,6 @@ const education = [
   {
     id: 4,
     degree: "Junior School Certificate (JSC)",
-    field: "Science",
     institution: "Kamarkati Girls Secondary School",
     location: "Kamarkati, Barisal",
     duration: "2016",
