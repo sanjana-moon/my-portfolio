@@ -27,8 +27,9 @@ const education = [
     courses: [
       "Data Structures & Algorithms",
       "Database Management Systems",
-      "Software Engineering",
-      "Computer Networks",
+      "Structured Programming Language",
+      "Object Oriented Programming",
+      "Design & Analysis of Algorithms",
     ],
   },
 
