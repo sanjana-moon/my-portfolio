@@ -114,7 +114,7 @@ const projects = [
     id: 3,
     slug: "booksphere",
     title: "Booksphere",
-    featured: false,
+    featured: true,
 
     description:
       "A full-stack book delivery management platform featuring authentication, role-based dashboards, Stripe payments, book management, and delivery tracking.",
@@ -122,12 +122,13 @@ const projects = [
     image: "/images/Booksphere.PNG",
 
     technologies: [
+      "Next.js",
       "React",
+      "JavaScript",
       "Tailwind CSS",
       "Node.js",
       "Express.js",
       "MongoDB",
-      "Stripe",
       "JWT",
     ],
 
@@ -178,7 +179,7 @@ const projects = [
     technologies: [
       "Next.js",
       "React",
-      "TypeScript",
+      "JavaScript",
       "Tailwind CSS",
       "Node.js",
       "Express.js",

@@ -16,23 +16,20 @@ const personal = {
   phone: "+8801736-056707",
   location: "Dhaka, Bangladesh",
 
-  education:
-    "B.Sc. (Honours) in Computer Science & Technology",
+  education: "B.Sc. (Honours) in Computer Science & Technology",
 
-  resume: "/resume.pdf",
   image: "/images/profile.jpg",
+
+  resume: {
+    label: "Resume",
+    url: "https://drive.google.com/file/d/1RkS5CZOHgRqRJulfOrenbjTS8XRXoiha/view?usp=sharing",
+  },
 
   buttons: [
     {
       label: "View Projects",
       href: "/#projects",
       variant: "primary",
-    },
-    {
-      label: "Download Resume",
-      href: "/resume.pdf",
-      variant: "secondary",
-      target: "_blank",
     },
   ],
 };

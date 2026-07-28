@@ -123,27 +123,22 @@ export default function Hero() {
                 <Link
                   key={button.label}
                   href={button.href}
-                  target={button.target}
-                  rel={
-                    button.target === "_blank"
-                      ? "noopener noreferrer"
-                      : undefined
-                  }
-                  className={
-                    button.variant === "primary"
-                      ? "inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 font-medium text-white transition-all duration-300 hover:bg-primary-hover"
-                      : "inline-flex items-center justify-center rounded-xl border border-border bg-surface px-6 py-3 font-medium text-heading transition-all duration-300 hover:border-primary hover:text-primary"
-                  }
+                  className="inline-flex items-center justify-center rounded-xl bg-primary px-6 py-3 font-medium text-white transition-all duration-300 hover:bg-primary-hover"
                 >
                   {button.label}
-
-                  {button.variant === "primary" ? (
-                    <ArrowRight className="ml-2" size={18} />
-                  ) : (
-                    <Download className="ml-2" size={18} />
-                  )}
+                  <ArrowRight className="ml-2" size={18} />
                 </Link>
               ))}
+
+              <Link
+                href={personal.resume.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-xl border border-border bg-surface px-6 py-3 font-medium text-heading transition-all duration-300 hover:border-primary hover:text-primary"
+              >
+                {personal.resume.label}
+                <ArrowRight className="ml-2" size={18} />
+              </Link>
             </div>
 
             {/* Social */}

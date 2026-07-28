@@ -8,6 +8,22 @@ const education = [
     result: "Currently Studying",
     description:
       "Currently pursuing my undergraduate degree with a strong focus on software engineering, web development, databases, and modern programming technologies.",
+
+    semesters: [
+      {
+        semester: "1st Semester",
+        cgpa: "3.63",
+      },
+      {
+        semester: "2nd Semester",
+        cgpa: "3.43",
+      },
+      {
+        semester: "3rd Semester",
+        cgpa: "3.58",
+      },
+    ],
+
     courses: [
       "Data Structures & Algorithms",
       "Database Management Systems",
