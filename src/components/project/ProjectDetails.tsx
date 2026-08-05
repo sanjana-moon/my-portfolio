@@ -74,17 +74,19 @@ export default function ProjectDetails({
               Frontend
             </Link>
 
-            <Link
-              href={project.backend}
-              target="_blank"
-              className="inline-flex items-center rounded-xl border border-border px-5 py-3 font-medium text-heading transition hover:border-primary hover:text-primary"
-            >
-              <GitBranch
-                size={18}
-                className="mr-2"
-              />
-              Backend
-            </Link>
+            {project.backend && (
+              <Link
+                href={project.backend}
+                target="_blank"
+                className="inline-flex items-center rounded-xl border border-border px-5 py-3 font-medium text-heading transition hover:border-primary hover:text-primary"
+              >
+                <GitBranch
+                  size={18}
+                  className="mr-2"
+                />
+                Backend
+              </Link>
+            )}
           </div>
         </div>
 
