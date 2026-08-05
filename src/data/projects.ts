@@ -142,7 +142,7 @@ const projects = [
       "MongoDB",
       "JWT",
     ],
-    live: "https://nestudy.vercel.app",
+    live: "https://nestudy.vercel.app/",
     frontend: "https://github.com/sanjana-moon/Nestudy",
     backend: "https://github.com/sanjana-moon/Nestudy-server",
     category: "Full Stack",
@@ -180,7 +180,7 @@ const projects = [
     "JavaScript",
     "Tailwind CSS",
   ],
-  live: "https://tiles-gallery-beta.vercel.app",
+  live: "https://tiles-gallery-beta.vercel.app/",
   frontend: "https://github.com/sanjana-moon/tiles-gallery.git",
   category: "Frontend",
   challenges: [
