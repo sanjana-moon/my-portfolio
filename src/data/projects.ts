@@ -144,7 +144,7 @@ const projects = [
     ],
     live: "https://nestudy.vercel.app/",
     frontend: "https://github.com/sanjana-moon/Nestudy",
-    backend: "https://github.com/sanjana-moon/Nestudy-server",
+    backend: "https://github.com/sanjana-moon/Nestudy_Server.git",
     category: "Full Stack",
     challenges: [
       {
