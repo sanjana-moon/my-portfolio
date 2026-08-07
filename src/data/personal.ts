@@ -1,6 +1,5 @@
 const personal = {
   name: "Sanjana Moon",
-
   designation: "Full Stack Developer",
 
   tagline:

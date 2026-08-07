@@ -90,7 +90,7 @@ export default function Contact() {
                     rel="noopener noreferrer"
                     className="font-semibold text-heading transition hover:text-primary"
                   >
-                    {personal.linkedin.replace("https://", "")}
+                    linkedin.com/in/sanjana-moon
                   </a>
                 </div>
               </div>
