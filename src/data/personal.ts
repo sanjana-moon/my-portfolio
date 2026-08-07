@@ -10,10 +10,12 @@ const personal = {
     "I'm a passionate Full Stack Developer who enjoys turning ideas into elegant digital experiences using modern web technologies.",
 
   about:
-    "I am a Computer Science and Technology student and an aspiring Full Stack Developer passionate about building modern, scalable, and user-friendly web applications. My programming journey started with curiosity and has grown into a commitment to continuous learning and problem-solving. I enjoy transforming ideas into clean, responsive, and intuitive digital experiences while exploring new technologies and best practices. Beyond programming, I have a passion for photography, enjoy discovering new ideas, and continuously work on improving both my technical and communication skills. I am always eager to embrace new challenges, collaborate with others, and contribute to meaningful projects that creates real value.",
+    "I am a Computer Science and Technology student and an aspiring Full Stack Developer passionate about building modern, scalable, and user-friendly web applications. My programming journey started with curiosity and has grown into a commitment to continuous learning and problem-solving. I enjoy transforming ideas into clean, responsive, and intuitive digital experiences while exploring new technologies and best practices. Beyond programming, I have a passion for photography, enjoy discovering new ideas, and continuously work on improving both my technical and communication skills. I am always eager to embrace new challenges, collaborate with others, and contribute to meaningful projects that create real value.",
 
   email: "sanjanamoonliya@gmail.com",
-  phone: "+8801736-056707",
+
+  linkedin: "https://www.linkedin.com/in/sanjana-moon",
+
   location: "Dhaka, Bangladesh",
 
   education: "B.Sc. (Honours) in Computer Science & Technology",
